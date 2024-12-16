@@ -16,7 +16,7 @@ export const login = async(username, password)=>{
         const response = await axios.post(`${baseURL}/access/api/v1/tokens`, 
             {   
                 scope: "applied-permissions/admin",
-                expires_in: 864
+                expires_in: 86400
             },
             {
                 auth: {
@@ -176,7 +176,7 @@ export const getUsers = async()=>{
             loggedIn: currentUser,
             users: response.data.users
         }
-        
+
         return new ResponseObj(response.status, userData);
     } catch (error) {
         return new ResponseObj(error.status, error.message);

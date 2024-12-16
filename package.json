@@ -8,6 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
+  "publishConfig": {
+    "registry": "https://trialw8jva4.jfrog.io/artifactory/api/npm/dr-cli-npm-local/"
+  },
   "author": "Dimitri Russell",
   "license": "ISC",
   "dependencies": {

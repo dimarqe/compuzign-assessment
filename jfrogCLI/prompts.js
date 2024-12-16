@@ -107,7 +107,7 @@ export const createUserPrompt = async()=>{
     let matching = false;
 
     do {
-        let passcode = await password({message: '(Must contain at least: 1 lower case letter, 1 upper case letter, 1 digit, 8 digits)\nEnter password: ', mask: true});
+        let passcode = await password({message: '(Must contain at least: 1 lower case letter, 1 upper case letter, 1 digit, 8 characters)\nEnter password: ', mask: true});
         let passcode2 = await password({message: 'Re-enter password: ', mask: true});
 
         if(passcode == passcode2){

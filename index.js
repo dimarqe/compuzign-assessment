@@ -1,3 +1,4 @@
+import { select } from '@inquirer/prompts';
 import figlet from 'figlet';
 import chalk from 'chalk';
 
@@ -13,9 +14,9 @@ const mainMenu = async()=>{
         choices: [
             { name: 'System Ping', value: 'System Ping' },
             { name: 'System Version', value: 'System Version' },
+            { name: 'Get Storage Info', value: 'Get Storage Info' },
             { name: 'Create User', value: 'Create User' },
             { name: 'Delete User', value: 'Delete User' },
-            { name: 'Get Storage Info', value: 'Get Storage Info' },
             { name: 'Update Repository', value: 'Update Repository' },
             { name: 'List Repositories', value: 'List Repositories' },
             { name: 'EXIT', value: 'EXIT' }
